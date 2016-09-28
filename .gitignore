@@ -1,0 +1,8 @@
+#ignore DS_Store
+.DS_Store
+
+#ignore input directory
+/input
+
+#ignore output directory
+/output

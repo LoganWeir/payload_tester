@@ -1,0 +1,72 @@
+{
+	"filter_parameters": ["", null, "NM", "W"],
+	"color_parameters" : {
+	"VL": "#fee5d9",
+	"L": "#fcae91",
+	"M": "#fb6a4a",
+	"H": "#de2d26",
+	"VH": "#a50f15"
+	},
+	"zoom_parameters": {
+		"8": {
+			"feature_skip": ["VL"],
+			"minimum_hole_size": 500000.0,
+			"simplification": 0.1,
+			"size_fill_limits": {
+				"0.5": 1000000,
+				"0.25": 3000000,
+				"0": 5000000
+			}
+		},
+		"9": {
+			"feature_skip": ["VL"],
+			"minimum_hole_size": 76215.0,
+			"simplification": 0.25,
+			"size_fill_limits": {
+				"0.5": 152431,
+				"0.25": 457292, 
+				"0": 762153
+			}
+		},
+		"10": {
+			"feature_skip": ["VL"],
+			"minimum_hole_size": 19054.0,
+			"simplification": 0.5,
+			"size_fill_limits": {
+				"0.5": 38108,
+				"0.25": 114323,
+				"0": 190538
+			}
+		},
+		"11": {
+			"feature_skip": ["VL"],
+			"minimum_hole_size": 7813.0,
+			"simplification": 0.5,
+			"size_fill_limits": {
+				"0.5": 15625,
+				"0.25": 46875,
+				"0": 78125
+			}
+		},
+		"12": {
+			"feature_skip": ["VL"],
+			"minimum_hole_size": 1953.125,
+			"simplification": 0.75,
+			"size_fill_limits": {
+				"0.5": 3906.25,
+				"0.25": 11718.75,
+				"0": 19531.25
+			}
+		},
+		"13": {
+			"feature_skip": ["VL"],
+			"minimum_hole_size": 0,
+			"simplification": 1,
+			"size_fill_limits": {
+				"0": 0.5,
+				"0": 0.25,
+				"0": 0
+			}
+		}
+	}
+}
