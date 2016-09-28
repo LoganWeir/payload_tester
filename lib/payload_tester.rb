@@ -97,8 +97,6 @@ for zoom_level, zoom_contents in testing_hash
 	# size_fill_ratio[0] = bbox_area * (12 * (10 ** -6))
 
 
-
-
 	# # DONE MANUALLY
 	# size_fill_ratio = {}
 	# size_fill_ratio[0.5] = 0

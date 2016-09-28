@@ -18,16 +18,28 @@
 				"0": 5000000
 			}
 		},
+		// Second 9
 		"9": {
 			"feature_skip": ["VL"],
-			"minimum_hole_size": 76215.0,
+			"minimum_hole_size": 100000.0,
 			"simplification": 0.25,
 			"size_fill_limits": {
-				"0.5": 152431,
-				"0.25": 457292, 
-				"0": 762153
+				"0.5": 200000,
+				"0.25": 600000, 
+				"0": 1000000
 			}
 		},
+		// First 9
+		// "9": {
+		// 	"feature_skip": ["VL"],
+		// 	"minimum_hole_size": 76215.0,
+		// 	"simplification": 0.25,
+		// 	"size_fill_limits": {
+		// 		"0.5": 152431,
+		// 		"0.25": 457292, 
+		// 		"0": 762153
+		// 	}
+		// },
 		"10": {
 			"feature_skip": ["VL"],
 			"minimum_hole_size": 19054.0,
