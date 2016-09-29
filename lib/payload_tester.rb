@@ -197,5 +197,7 @@ pp(size_parameters)
 
 output.write(size_parameters.to_json) unless output.nil?
 
+output.close unless output.nil?
+
 puts "\a"
 
