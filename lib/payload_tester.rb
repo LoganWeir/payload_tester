@@ -3,14 +3,14 @@
 $LOAD_PATH.unshift File.expand_path('../../lib', __FILE__)
 
 require 'json'
-require 'net/http'
-require 'uri'
 require 'trollop'
 require 'rgeo/geo_json'
 require 'rgeo'
-require 'bounding_box_testing'
-# For printing hashes...
+# For pretty printing, if needed
 require 'pry'
+
+require 'bounding_box_testing'
+
 
 
 # Set options outside of ARGV
