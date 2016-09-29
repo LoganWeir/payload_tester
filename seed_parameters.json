@@ -8,16 +8,39 @@
 	"VH": "#a50f15"
 	},
 	"zoom_parameters": {
+		// Third 8
 		"8": {
 			"feature_skip": ["VL"],
-			"minimum_hole_size": 500000.0,
-			"simplification": 0.05,
+			"minimum_hole_size": 600000.0,
+			"simplification": 0.10,
 			"size_fill_limits": {
-				"0.5": 1000000,
-				"0.25": 3000000,
-				"0": 5000000
+				"0.5": 2750000,
+				"0.25": 5500000,
+				"0": 10000000
 			}
 		},
+		// // Second 8
+		// "8": {
+		// 	"feature_skip": ["VL"],
+		// 	"minimum_hole_size": 500000.0,
+		// 	"simplification": 0.20,
+		// 	"size_fill_limits": {
+		// 		"0.5": 1000000,
+		// 		"0.25": 3000000,
+		// 		"0": 5000000
+		// 	}
+		// },
+		// // First 8, .99 MB
+		// "8": {
+		// 	"feature_skip": ["VL"],
+		// 	"minimum_hole_size": 500000.0,
+		// 	"simplification": 0.05,
+		// 	"size_fill_limits": {
+		// 		"0.5": 1000000,
+		// 		"0.25": 3000000,
+		// 		"0": 5000000
+		// 	}
+		// },
 		// Second 9
 		"9": {
 			"feature_skip": ["VL"],
