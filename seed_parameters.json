@@ -18,17 +18,50 @@
 				"0": 5000000
 			}
 		},
-		// Second 9
+		// Fifth 9
 		"9": {
 			"feature_skip": ["VL"],
-			"minimum_hole_size": 100000.0,
-			"simplification": 0.25,
+			"minimum_hole_size": 214358.0,
+			"simplification": 0.1,
 			"size_fill_limits": {
-				"0.5": 200000,
-				"0.25": 600000, 
-				"0": 1000000
+				"0.5": 428717,
+				"0.25": 1286153, 
+				"0": 2143588
 			}
 		},
+		// // Fourth 9
+		// "9": {
+		// 	"feature_skip": ["VL"],
+		// 	"minimum_hole_size": 161051.0,
+		// 	"simplification": 0.2,
+		// 	"size_fill_limits": {
+		// 		"0.5": 322102,
+		// 		"0.25": 966306, 
+		// 		"0": 1610510
+		// 	}
+		// },
+		// // Third 9
+		// "9": {
+		// 	"feature_skip": ["VL"],
+		// 	"minimum_hole_size": 133100.0,
+		// 	"simplification": 0.1,
+		// 	"size_fill_limits": {
+		// 		"0.5": 266200,
+		// 		"0.25": 798600, 
+		// 		"0": 1331000
+		// 	}
+		// },
+		// // Second 9
+		// "9": {
+		// 	"feature_skip": ["VL"],
+		// 	"minimum_hole_size": 100000.0,
+		// 	"simplification": 0.25,
+		// 	"size_fill_limits": {
+		// 		"0.5": 200000,
+		// 		"0.25": 600000, 
+		// 		"0": 1000000
+		// 	}
+		// },
 		// First 9
 		// "9": {
 		// 	"feature_skip": ["VL"],

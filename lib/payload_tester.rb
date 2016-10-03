@@ -154,12 +154,12 @@ for zoom_level, zoom_contents in testing_hash
 
 
 
-		if simplify_ratio <= 0.1
-			puts "Simplification Limit Hit"
-			break
-		else
-			simplify_ratio -= 0.05
-		end
+		# if simplify_ratio < 0.1
+		# 	puts "Simplification Limit Hit"
+		# 	# break
+		# else
+		# 	simplify_ratio -= 0.05
+		# end
 
 		if attempts == 20
 			puts "TOO MANY ATTEMPTS!!!"
@@ -189,7 +189,7 @@ for zoom_level, zoom_contents in testing_hash
 	size_parameters[zoom_level]['Simplification'] = simplify_ratio
 	size_parameters[zoom_level]['Minimum Hole Size'] = min_hole_size
 	size_parameters[zoom_level]['Fill Size Limits'] = size_fill_ratio
-
+	size_parameters[zoom_level]['Final Payload'] = current_payload_average
 end
 
 
