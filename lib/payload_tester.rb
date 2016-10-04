@@ -126,7 +126,7 @@ for zoom_level, zoom_contents in testing_hash
 
 	attempts = 0
 
-	while current_payload_average > 2
+	while current_payload_average > 1
 
 		attempts += 1
 
@@ -180,6 +180,7 @@ for zoom_level, zoom_contents in testing_hash
 
 		puts "Payload = #{current_payload_average}"
 		puts "=========="
+		puts "\a"
 
 	end
 
@@ -199,5 +200,7 @@ output.write(size_parameters.to_json) unless output.nil?
 
 output.close unless output.nil?
 
+puts "\a"
+puts "\a"
 puts "\a"
 
