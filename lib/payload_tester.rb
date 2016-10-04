@@ -152,8 +152,6 @@ for zoom_level, zoom_contents in testing_hash
 
 		end
 
-
-
 		# if simplify_ratio < 0.1
 		# 	puts "Simplification Limit Hit"
 		# 	# break
