@@ -127,9 +127,12 @@ for zoom_level, zoom_contents in testing_hash
 		min_hole_size, size_fill_ratio, target_boxes, factory)
 
 	current_payload_average = average_box_length(first_simplification)
+	average_point_length = average_polygon_point_count(first_simplification)
 
 	puts ">>>>>>>>>>"
 	puts "Zoom Level #{zoom_level} initial size: #{current_payload_average}"
+
+	puts "Average BBox-Chopped Polygon Point Length: #{average_point_length}"
 
 	attempts = 0
 
