@@ -129,16 +129,27 @@
 		// 		"0": 762153
 		// 	}
 		// },
+		// Second 10 (first didnt drop under 3 MB)
 		"10": {
 			"feature_skip": ["VL"],
-			"minimum_hole_size": 19054.0,
-			"simplification": 0.2,
+			"minimum_hole_size": 30000.0,
+			"simplification": 0.15,
 			"size_fill_limits": {
-				"0.5": 38108,
-				"0.25": 114323,
-				"0": 190538
+				"0.5": 125000,
+				"0.25": 250000,
+				"0": 500000
 			}
 		},
+		// "10": {
+		// 	"feature_skip": ["VL"],
+		// 	"minimum_hole_size": 19054.0,
+		// 	"simplification": 0.15,
+		// 	"size_fill_limits": {
+		// 		"0.5": 38108,
+		// 		"0.25": 114323,
+		// 		"0": 190538
+		// 	}
+		// },
 		"11": {
 			"feature_skip": ["VL"],
 			"minimum_hole_size": 7813.0,
