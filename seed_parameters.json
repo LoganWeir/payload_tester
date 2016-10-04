@@ -132,7 +132,7 @@
 		"10": {
 			"feature_skip": ["VL"],
 			"minimum_hole_size": 19054.0,
-			"simplification": 0.5,
+			"simplification": 0.2,
 			"size_fill_limits": {
 				"0.5": 38108,
 				"0.25": 114323,
