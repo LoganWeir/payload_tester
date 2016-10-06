@@ -129,17 +129,39 @@
 		// 		"0": 762153
 		// 	}
 		// },
-		// Second 10 (first didnt drop under 3 MB)
+		// Fourth 10 (dropping to .125 simp, can't get below 2.5 otherwise)
 		"10": {
 			"feature_skip": ["VL"],
-			"minimum_hole_size": 30000.0,
-			"simplification": 0.15,
+			"minimum_hole_size": 50000.0,
+			"simplification": 0.125,
 			"size_fill_limits": {
-				"0.5": 125000,
-				"0.25": 250000,
-				"0": 500000
+				"0.5": 200000,
+				"0.25": 400000,
+				"0": 800000
 			}
 		},
+		// // Third 10 (first didnt drop under 3 MB)
+		// "10": {
+		// 	"feature_skip": ["VL"],
+		// 	"minimum_hole_size": 30000.0,
+		// 	"simplification": 0.15,
+		// 	"size_fill_limits": {
+		// 		"0.5": 125000,
+		// 		"0.25": 250000,
+		// 		"0": 500000
+		// 	}
+		// },
+		// // Second 10 (first didnt drop under 3 MB)
+		// "10": {
+		// 	"feature_skip": ["VL"],
+		// 	"minimum_hole_size": 30000.0,
+		// 	"simplification": 0.15,
+		// 	"size_fill_limits": {
+		// 		"0.5": 125000,
+		// 		"0.25": 250000,
+		// 		"0": 500000
+		// 	}
+		// },
 		// "10": {
 		// 	"feature_skip": ["VL"],
 		// 	"minimum_hole_size": 19054.0,
@@ -150,33 +172,58 @@
 		// 		"0": 190538
 		// 	}
 		// },
+		// Third FINAL
 		"11": {
 			"feature_skip": ["VL"],
-			"minimum_hole_size": 7813.0,
-			"simplification": 0.5,
+			"minimum_hole_size": 20000.0,
+			"simplification": 0.15,
 			"size_fill_limits": {
-				"0.5": 15625,
-				"0.25": 46875,
-				"0": 78125
+				"0.5": 40000,
+				"0.25": 125000,
+				"0": 200000
 			}
-		},
+		},		
+		// // Second
+		// "11": {
+		// 	"feature_skip": ["VL"],
+		// 	"minimum_hole_size": 7813.0,
+		// 	"simplification": 0.20,
+		// 	"size_fill_limits": {
+		// 		"0.5": 15625,
+		// 		"0.25": 46875,
+		// 		"0": 78125
+		// 	}
+		// },
+		// // First
+		// "11": {
+		// 	"feature_skip": ["VL"],
+		// 	"minimum_hole_size": 7813.0,
+		// 	"simplification": 0.25,
+		// 	"size_fill_limits": {
+		// 		"0.5": 15625,
+		// 		"0.25": 46875,
+		// 		"0": 78125
+		// 	}
+		// },
+		// First, FINAL
 		"12": {
 			"feature_skip": ["VL"],
-			"minimum_hole_size": 1953.125,
-			"simplification": 0.75,
+			"minimum_hole_size": 2000,
+			"simplification": 0.5,
 			"size_fill_limits": {
-				"0.5": 3906.25,
-				"0.25": 11718.75,
-				"0": 19531.25
+				"0.5": 4000,
+				"0.25": 10000,
+				"0": 20000
 			}
 		},
+		// FINAL
 		"13": {
 			"feature_skip": ["VL"],
 			"minimum_hole_size": 0,
 			"simplification": 1,
 			"size_fill_limits": {
-				"0": 0.5,
-				"0": 0.25,
+				"0.5": 0,
+				"0.25": 0,
 				"0": 0
 			}
 		}

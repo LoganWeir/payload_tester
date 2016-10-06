@@ -25,8 +25,16 @@ def polychop_lentest(array, bounding_box)
 	for polygon in array
 		if polygon.intersects?(bounding_box)
 			poly_chop = bounding_box.intersection(polygon)
-			json_poly = RGeo::GeoJSON.encode(poly_chop)
-			chopped_json_polys << json_poly
+			geo_type = poly_chop.geometry_type.type_name
+			if geo_type == "Polygon"
+				json_poly = RGeo::GeoJSON.encode(poly_chop)
+				chopped_json_polys << json_poly
+			elsif geo_type == "MultiPolygon"
+				for single_poly in poly_chop
+					json_poly = RGeo::GeoJSON.encode(single_poly)
+					chopped_json_polys << json_poly
+				end
+			end
 		end
 	end
 	return (chopped_json_polys.to_json.length.to_f/1024)/1024
@@ -68,7 +76,7 @@ def polychop_point_test(array, bounding_box)
 			end
 		end
 	end
-	return average(point_lengths)
+	return [average(point_lengths), point_lengths.max]
 end
 
 
@@ -76,32 +84,27 @@ end
 # Gets the average JSON length of all boxes
 def average_polygon_point_count(array)
 	all_polygon_lengths = []
+	max_polygon_length = []
 	for box in array
-		all_polygon_lengths << polychop_point_test(box['polygons'], box['bbox'])
+		testing = polychop_point_test(box['polygons'], box['bbox'])
+		all_polygon_lengths << testing[0]
+		max_polygon_length << testing[1]
+
 	end
-	average(all_polygon_lengths)
+	[average(all_polygon_lengths),  average(max_polygon_length)]
 end
 
 
 
 def total_point_count(polygon)
-
 	total_count = 0
-
 	total_count += polygon.exterior_ring.num_points
-
 	if polygon.num_interior_rings > 0
-
 		for inner_ring in polygon.interior_rings do 
-
 			total_count += inner_ring.num_points
-
 		end
-
 	end
-
 	total_count
-
 end
 
 

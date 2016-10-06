@@ -78,18 +78,18 @@ for zoom_level, zoom_contents in testing_hash
 	# PULLED FROM FILE
 	min_hole_size = zoom_contents['settings']["minimum_hole_size"]
 	simplify_ratio = zoom_contents['settings']["simplification"] 
-	# size_fill_ratio = zoom_contents['settings']["size_fill_limits"]
+	size_fill_ratio = zoom_contents['settings']["size_fill_limits"]
 
 	# Setting Limits
 	min_hole_size_limit = min_hole_size * 10
 
 	
 
-	# DONE AS RATIO, RATIO IS SET BY TESTING ON ZOOM 8
-	size_fill_ratio = {}
-	size_fill_ratio["0.5"] = bbox_area * (50 * (10 ** -7))
-	size_fill_ratio["0.25"] = bbox_area * (10 * (10 ** -6))
-	size_fill_ratio["0"] = bbox_area * (20 * (10 ** -6))
+	# # DONE AS RATIO, RATIO IS SET BY TESTING ON ZOOM 8
+	# size_fill_ratio = {}
+	# size_fill_ratio["0.5"] = bbox_area * (50 * (10 ** -7))
+	# size_fill_ratio["0.25"] = bbox_area * (10 * (10 ** -6))
+	# size_fill_ratio["0"] = bbox_area * (20 * (10 ** -6))
 
 
 
@@ -132,7 +132,8 @@ for zoom_level, zoom_contents in testing_hash
 	puts ">>>>>>>>>>"
 	puts "Zoom Level #{zoom_level} initial size: #{current_payload_average}"
 
-	puts "Average BBox-Chopped Polygon Point Length: #{average_point_length}"
+	puts "Average BBox-Chopped Polygon Point Length: #{average_point_length[0]}"
+	puts "Max BBox-Chopped Polygon Point Length: #{average_point_length[1]}"
 
 	attempts = 0
 
